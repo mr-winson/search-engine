@@ -1,0 +1,34 @@
+* {
+    word-wrap: wrap;
+}
+
+.searchtitle {
+    font-size: large;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.searchurl {
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    padding-bottom: 2px !important;
+    margin-bottom: 2px !important;
+    color: rgb(0, 66, 133);
+}
+
+.searchdescription {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    padding-bottom: 10px !important;
+}
+
+.resultitem {
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px;
+}

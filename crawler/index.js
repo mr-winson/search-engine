@@ -6,22 +6,17 @@ const robots = require('robots')
 const parser = new robots.RobotsParser();
 const c = new Crawler();
 
-var crawllist = ["https://github.com", "https://facebook.com", "https://twitter.com"]
+var crawllist = ["https://wikipedia.com", "https://facebook.com", "https://twitter.com", "https://apple.com"]
 
 for (i = 0; i < crawllist.length; i++) {
     crawl(crawllist[i])
 }
 
-connectmongo()
-
-async function connectmongo() {
-    await mongoose.connect('mongodb://localhost/search-engine-crawler', {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useFindAndModify: false,
-        useCreateIndex: true
-    });
-}
+mongoose.connect('mongodb://localhost/search-engine-crawler', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true
+});
 
 function crawl(url) {
     // console.log(`Crawling ${url}`);

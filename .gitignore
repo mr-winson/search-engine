@@ -1,5 +1,9 @@
 # Other
 /crawler/node_modules
+/crawler/package-lock.json
+
+/search/node_modules
+/search/package-lock.json
 
 # Logs
 logs
